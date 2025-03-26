@@ -94,10 +94,12 @@ const Contact = () => {
               method="POST" 
               data-netlify="true" 
               data-netlify-honeypot="bot-field" 
+              data-netlify-recaptcha="true"
               onSubmit={handleSubmit}
               className="contact-form"
             >
               <input type="hidden" name="form-name" value="contact" />
+              <input type="hidden" name="subject" value="New Contact Form Submission" />
               <p className="hidden">
                 <label>Don't fill this out if you're human: <input name="bot-field" /></label>
               </p>
