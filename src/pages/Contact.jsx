@@ -15,6 +15,8 @@ const Contact = () => {
     setSubmitStatus('submitting')
     
     try {
+      const form = e.target
+      const formData = new FormData(form)
       const response = await fetch('/', {
         method: 'POST',
         headers: {
@@ -25,7 +27,7 @@ const Contact = () => {
       
       if (response.ok) {
         setSubmitStatus('success')
-        setFormData({ name: '', email: '', phone: '', message: '', preferredDate: '' })
+        form.reset()
       } else {
         setSubmitStatus('error')
       }
@@ -92,7 +94,6 @@ const Contact = () => {
               method="POST" 
               data-netlify="true" 
               data-netlify-honeypot="bot-field" 
-              action="/"
               onSubmit={handleSubmit}
               className="contact-form"
             >
