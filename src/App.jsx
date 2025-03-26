@@ -1,58 +1,64 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
 import Home from './pages/Home'
-import Services from './pages/Services'
 import About from './pages/About'
+import Services from './pages/Services'
 import Contact from './pages/Contact'
+import Footer from './components/Footer'
+import './App.css'
 
 function App() {
   return (
     <Router>
       <div className="app">
-        <header className="header">
-          <nav className="nav">
-            <div className="logo">PT Wellness</div>
-            <ul className="nav-links">
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/services">Services</Link></li>
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
-            </ul>
-          </nav>
-        </header>
-
-        <main className="main-content">
+        <Navbar />
+        <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/services" element={<Services />} />
             <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
-
-        <footer className="footer">
-          <div className="footer-content">
-            <div className="footer-section">
-              <h4>PT Wellness</h4>
-              <p>Your journey to better health starts here</p>
-            </div>
-            <div className="footer-section">
-              <h4>Contact</h4>
-              <p>Phone: (555) 123-4567</p>
-              <p>Email: info@ptwellness.com</p>
-            </div>
-            <div className="footer-section">
-              <h4>Hours</h4>
-              <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-              <p>Saturday: 9:00 AM - 1:00 PM</p>
-              <p>Sunday: Closed</p>
-            </div>
-          </div>
-          <div className="footer-bottom">
-            <p>&copy; 2024 PT Wellness. All rights reserved.</p>
-          </div>
-        </footer>
+        <Footer />
       </div>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "PhysicalTherapy",
+          "name": "[Your Practice Name]",
+          "description": "Professional physical therapy services specializing in sports injuries, rehabilitation, and pain management.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "[Your Street Address]",
+            "addressLocality": "[Your City]",
+            "addressRegion": "[Your State]",
+            "postalCode": "[Your ZIP]",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "[Your Latitude]",
+            "longitude": "[Your Longitude]"
+          },
+          "url": "https://[your-domain].netlify.app",
+          "telephone": "[Your Phone Number]",
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "09:00",
+              "closes": "17:00"
+            }
+          ],
+          "sameAs": [
+            "[Your Facebook URL]",
+            "[Your Instagram URL]",
+            "[Your LinkedIn URL]"
+          ]
+        })}
+      </script>
     </Router>
   )
 }
