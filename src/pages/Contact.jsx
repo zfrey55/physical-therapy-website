@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function Contact() {
+const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -11,16 +11,17 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // Here you would typically handle the form submission
+    // The form will be handled by Netlify Forms
+    // We can still log the data for development purposes
     console.log('Form submitted:', formData)
-    alert('Thank you for your message. We will contact you soon!')
   }
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    })
+    const { name, value } = e.target
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }))
   }
 
   return (
@@ -57,9 +58,21 @@ function Contact() {
           </div>
         </div>
 
-        <div className="contact-form">
+        <div className="contact-form-container">
           <h2>Send us a Message</h2>
-          <form onSubmit={handleSubmit}>
+          <form 
+            name="contact" 
+            method="POST" 
+            data-netlify="true" 
+            data-netlify-honeypot="bot-field" 
+            onSubmit={handleSubmit}
+            className="contact-form"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <p className="hidden">
+              <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+            </p>
+            
             <div className="form-group">
               <label htmlFor="name">Name</label>
               <input
