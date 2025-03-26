@@ -1,46 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
-    preferredDate: ''
-  })
-  const [submitStatus, setSubmitStatus] = useState('')
-
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-    setSubmitStatus('submitting')
-    
-    try {
-      const form = e.target
-      const formData = new FormData(form)
-      const response = await fetch('/', {
-        method: 'POST',
-        body: formData,
-      })
-      
-      if (response.ok) {
-        setSubmitStatus('success')
-        form.reset()
-      } else {
-        setSubmitStatus('error')
-      }
-    } catch (error) {
-      setSubmitStatus('error')
-    }
-  }
-
-  const handleChange = (e) => {
-    const { name, value } = e.target
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value
-    }))
-  }
-
   return (
     <div className="contact-page">
       <section className="page-header">
@@ -77,97 +37,75 @@ const Contact = () => {
 
         <div className="contact-form-container">
           <h2>Send us a Message</h2>
-          {submitStatus === 'success' ? (
-            <div className="success-message">
-              <h3>Thank you for your message!</h3>
-              <p>We'll get back to you as soon as possible.</p>
-              <button onClick={() => setSubmitStatus('')} className="submit-button">
-                Send Another Message
-              </button>
+          <form 
+            name="contact" 
+            method="POST" 
+            data-netlify="true" 
+            data-netlify-honeypot="bot-field" 
+            className="contact-form"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <p className="hidden">
+              <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+            </p>
+            
+            <div className="form-group">
+              <label htmlFor="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+              />
             </div>
-          ) : (
-            <form 
-              name="contact" 
-              method="POST" 
-              data-netlify="true" 
-              data-netlify-honeypot="bot-field" 
-              onSubmit={handleSubmit}
-              className="contact-form"
+
+            <div className="form-group">
+              <label htmlFor="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="phone">Phone</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+              />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="preferredDate">Preferred Appointment Date</label>
+              <input
+                type="date"
+                id="preferredDate"
+                name="preferredDate"
+                required
+              />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                rows="5"
+              ></textarea>
+            </div>
+
+            <button 
+              type="submit" 
+              className="submit-button"
             >
-              <input type="hidden" name="form-name" value="contact" />
-              <p className="hidden">
-                <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-              </p>
-              
-              <div className="form-group">
-                <label htmlFor="name">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="phone">Phone</label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="preferredDate">Preferred Appointment Date</label>
-                <input
-                  type="date"
-                  id="preferredDate"
-                  name="preferredDate"
-                  value={formData.preferredDate}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows="5"
-                ></textarea>
-              </div>
-
-              <button 
-                type="submit" 
-                className="submit-button"
-                disabled={submitStatus === 'submitting'}
-              >
-                {submitStatus === 'submitting' ? 'Sending...' : 'Send Message'}
-              </button>
-            </form>
-          )}
+              Send Message
+            </button>
+          </form>
         </div>
       </section>
 
