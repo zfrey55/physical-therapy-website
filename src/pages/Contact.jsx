@@ -8,12 +8,30 @@ const Contact = () => {
     message: '',
     preferredDate: ''
   })
+  const [submitStatus, setSubmitStatus] = useState('')
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // The form will be handled by Netlify Forms
-    // We can still log the data for development purposes
-    console.log('Form submitted:', formData)
+    setSubmitStatus('submitting')
+    
+    try {
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams(formData).toString(),
+      })
+      
+      if (response.ok) {
+        setSubmitStatus('success')
+        setFormData({ name: '', email: '', phone: '', message: '', preferredDate: '' })
+      } else {
+        setSubmitStatus('error')
+      }
+    } catch (error) {
+      setSubmitStatus('error')
+    }
   }
 
   const handleChange = (e) => {
@@ -60,82 +78,98 @@ const Contact = () => {
 
         <div className="contact-form-container">
           <h2>Send us a Message</h2>
-          <form 
-            name="contact" 
-            method="POST" 
-            data-netlify="true" 
-            data-netlify-honeypot="bot-field" 
-            action="/"
-            onSubmit={handleSubmit}
-            className="contact-form"
-          >
-            <input type="hidden" name="form-name" value="contact" />
-            <p className="hidden">
-              <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-            </p>
-            
-            <div className="form-group">
-              <label htmlFor="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-              />
+          {submitStatus === 'success' ? (
+            <div className="success-message">
+              <h3>Thank you for your message!</h3>
+              <p>We'll get back to you as soon as possible.</p>
+              <button onClick={() => setSubmitStatus('')} className="submit-button">
+                Send Another Message
+              </button>
             </div>
+          ) : (
+            <form 
+              name="contact" 
+              method="POST" 
+              data-netlify="true" 
+              data-netlify-honeypot="bot-field" 
+              action="/"
+              onSubmit={handleSubmit}
+              className="contact-form"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <p className="hidden">
+                <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+              </p>
+              
+              <div className="form-group">
+                <label htmlFor="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
 
-            <div className="form-group">
-              <label htmlFor="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-            </div>
+              <div className="form-group">
+                <label htmlFor="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
 
-            <div className="form-group">
-              <label htmlFor="phone">Phone</label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                required
-              />
-            </div>
+              <div className="form-group">
+                <label htmlFor="phone">Phone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
 
-            <div className="form-group">
-              <label htmlFor="preferredDate">Preferred Appointment Date</label>
-              <input
-                type="date"
-                id="preferredDate"
-                name="preferredDate"
-                value={formData.preferredDate}
-                onChange={handleChange}
-                required
-              />
-            </div>
+              <div className="form-group">
+                <label htmlFor="preferredDate">Preferred Appointment Date</label>
+                <input
+                  type="date"
+                  id="preferredDate"
+                  name="preferredDate"
+                  value={formData.preferredDate}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
 
-            <div className="form-group">
-              <label htmlFor="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                required
-                rows="5"
-              ></textarea>
-            </div>
+              <div className="form-group">
+                <label htmlFor="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  rows="5"
+                ></textarea>
+              </div>
 
-            <button type="submit" className="submit-button">Send Message</button>
-          </form>
+              <button 
+                type="submit" 
+                className="submit-button"
+                disabled={submitStatus === 'submitting'}
+              >
+                {submitStatus === 'submitting' ? 'Sending...' : 'Send Message'}
+              </button>
+            </form>
+          )}
         </div>
       </section>
 
