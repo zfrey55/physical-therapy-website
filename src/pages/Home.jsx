@@ -1,27 +1,50 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './Home.css'
 
-function Home() {
+const Home = () => {
   return (
     <div className="home">
       <section className="hero">
-        <h1>Welcome to PT Wellness</h1>
+        <h1>Welcome to Gillespie Therapy</h1>
         <p>Your journey to better health starts here</p>
-        <Link to="/contact" className="cta-button">Schedule Appointment</Link>
+        <Link to="/contact" className="cta-button">Book an Appointment</Link>
       </section>
 
-      <section className="features">
-        <div className="feature-card">
-          <h3>Expert Care</h3>
-          <p>Our licensed physical therapists have years of experience treating various conditions.</p>
+      <section className="services-preview">
+        <h2>Our Services</h2>
+        <div className="services-grid">
+          <div className="service-card">
+            <h3>Physical Therapy</h3>
+            <p>Comprehensive rehabilitation and recovery programs</p>
+          </div>
+          <div className="service-card">
+            <h3>Sports Injury</h3>
+            <p>Specialized treatment for athletes and sports-related injuries</p>
+          </div>
+          <div className="service-card">
+            <h3>Pain Management</h3>
+            <p>Effective solutions for chronic and acute pain</p>
+          </div>
         </div>
-        <div className="feature-card">
-          <h3>Personalized Treatment</h3>
-          <p>We create custom treatment plans tailored to your specific needs and goals.</p>
-        </div>
-        <div className="feature-card">
-          <h3>Modern Facility</h3>
-          <p>State-of-the-art equipment and comfortable treatment spaces.</p>
+        <Link to="/services" className="view-all-button">View All Services</Link>
+      </section>
+
+      <section className="why-choose-us">
+        <h2>Why Choose Gillespie Therapy?</h2>
+        <div className="features-grid">
+          <div className="feature">
+            <h3>Expert Care</h3>
+            <p>Licensed and experienced physical therapists</p>
+          </div>
+          <div className="feature">
+            <h3>Personalized Treatment</h3>
+            <p>Customized plans for your specific needs</p>
+          </div>
+          <div className="feature">
+            <h3>Modern Facility</h3>
+            <p>State-of-the-art equipment and treatment rooms</p>
+          </div>
         </div>
       </section>
 
