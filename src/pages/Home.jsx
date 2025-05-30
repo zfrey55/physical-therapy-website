@@ -1,30 +1,41 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Slideshow from '../components/Slideshow'
 import './Home.css'
 
 const Home = () => {
+  const slideshowImages = [
+    '/images/slide1.jpg',
+    '/images/slide2.jpg',
+    '/images/slide3.jpg',
+    '/images/slide4.jpg'
+  ]
+
   return (
     <div className="home">
-      <section className="hero">
-        <h1>Welcome to Gillespie Therapy</h1>
-        <p>Your journey to better health starts here</p>
-        <Link to="/contact" className="cta-button">Book an Appointment</Link>
-      </section>
+      <div className="hero">
+        <Slideshow images={slideshowImages} />
+        <div className="hero-content">
+          <h1>Welcome to Gillespie Therapy</h1>
+          <p>Your journey to better health and wellness starts here</p>
+          <Link to="/contact" className="cta-button">Book an Appointment</Link>
+        </div>
+      </div>
 
       <section className="services-preview">
         <h2>Our Services</h2>
         <div className="services-grid">
           <div className="service-card">
             <h3>Physical Therapy</h3>
-            <p>Comprehensive rehabilitation and recovery programs</p>
+            <p>Personalized treatment plans to help you recover from injuries and improve mobility.</p>
           </div>
           <div className="service-card">
-            <h3>Sports Injury</h3>
-            <p>Specialized treatment for athletes and sports-related injuries</p>
+            <h3>Sports Rehabilitation</h3>
+            <p>Specialized care for athletes to get back to peak performance.</p>
           </div>
           <div className="service-card">
-            <h3>Pain Management</h3>
-            <p>Effective solutions for chronic and acute pain</p>
+            <h3>Wellness Programs</h3>
+            <p>Comprehensive programs to maintain and improve your overall health.</p>
           </div>
         </div>
         <Link to="/services" className="view-all-button">View All Services</Link>
@@ -35,15 +46,15 @@ const Home = () => {
         <div className="features-grid">
           <div className="feature">
             <h3>Expert Care</h3>
-            <p>Licensed and experienced physical therapists</p>
-          </div>
-          <div className="feature">
-            <h3>Personalized Treatment</h3>
-            <p>Customized plans for your specific needs</p>
+            <p>Our team of experienced therapists provides personalized care tailored to your needs.</p>
           </div>
           <div className="feature">
             <h3>Modern Facility</h3>
-            <p>State-of-the-art equipment and treatment rooms</p>
+            <p>State-of-the-art equipment and comfortable treatment spaces for optimal recovery.</p>
+          </div>
+          <div className="feature">
+            <h3>Proven Results</h3>
+            <p>Track record of successful patient outcomes and positive testimonials.</p>
           </div>
         </div>
       </section>
@@ -52,24 +63,20 @@ const Home = () => {
         <h2>What Our Patients Say</h2>
         <div className="testimonial-grid">
           <div className="testimonial-card">
-            <p>"Gillespie Therapy helped me recover from my sports injury faster than I expected. The staff is professional and caring."</p>
-            <cite>- Sarah M., Athlete</cite>
+            <p>"The team at Gillespie Therapy helped me recover from my sports injury faster than I expected. Their expertise and dedication are unmatched."</p>
+            <cite>- Sarah M.</cite>
           </div>
           <div className="testimonial-card">
-            <p>"After my surgery, the physical therapy program at Gillespie Therapy was crucial to my recovery. Highly recommended!"</p>
-            <cite>- John D., Patient</cite>
-          </div>
-          <div className="testimonial-card">
-            <p>"The personalized attention and expertise of the therapists made all the difference in my rehabilitation journey."</p>
-            <cite>- Emily R., Patient</cite>
+            <p>"After my surgery, the rehabilitation program at Gillespie Therapy was crucial to my recovery. I'm grateful for their support and guidance."</p>
+            <cite>- John D.</cite>
           </div>
         </div>
       </section>
 
       <section className="cta-section">
-        <h2>Ready to Start Your Recovery Journey?</h2>
-        <p>Contact us today to schedule your first appointment</p>
-        <Link to="/contact" className="cta-button">Get Started</Link>
+        <h2>Start Your Journey to Better Health</h2>
+        <p>Take the first step towards a healthier, more active lifestyle. Contact us today to schedule your appointment.</p>
+        <Link to="/contact" className="cta-button">Book an Appointment</Link>
       </section>
     </div>
   )
