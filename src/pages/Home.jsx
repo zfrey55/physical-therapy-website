@@ -52,11 +52,11 @@ const Home = () => {
         <h2>What Our Patients Say</h2>
         <div className="testimonial-grid">
           <div className="testimonial-card">
-            <p>"PT Wellness helped me recover from my sports injury faster than I expected. The staff is professional and caring."</p>
+            <p>"Gillespie Therapy helped me recover from my sports injury faster than I expected. The staff is professional and caring."</p>
             <cite>- Sarah M., Athlete</cite>
           </div>
           <div className="testimonial-card">
-            <p>"After my surgery, the physical therapy program at PT Wellness was crucial to my recovery. Highly recommended!"</p>
+            <p>"After my surgery, the physical therapy program at Gillespie Therapy was crucial to my recovery. Highly recommended!"</p>
             <cite>- John D., Patient</cite>
           </div>
           <div className="testimonial-card">
