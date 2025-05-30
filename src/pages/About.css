@@ -29,6 +29,12 @@
   text-align: center;
 }
 
+.our-story h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
 .our-story p {
   font-size: 1.1rem;
   line-height: 1.6;
@@ -42,19 +48,28 @@
   text-align: center;
 }
 
+.our-team h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   margin: 2rem 0;
   padding: 0 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .team-member {
   background-color: white;
   padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -62,14 +77,37 @@
   transform: translateY(-5px);
 }
 
+.team-member-image {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #007bff;
+}
+
+.team-member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .team-member h3 {
   color: #333;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
-.team-member p {
+.team-member-title {
+  color: #007bff;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.team-member-bio {
   color: #666;
-  margin: 0.5rem 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
 }
 
 /* Our Values Section */
@@ -78,23 +116,33 @@
   text-align: center;
 }
 
+.our-values h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
 .values-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin: 2rem 0;
   padding: 0 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .value {
   background-color: white;
   padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .value h3 {
   color: #007bff;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -123,8 +171,12 @@
     padding: 0 1rem;
   }
 
-  .team-member,
-  .value {
+  .team-member {
     padding: 1.5rem;
+  }
+
+  .team-member-image {
+    width: 150px;
+    height: 150px;
   }
 } 

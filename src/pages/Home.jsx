@@ -4,17 +4,10 @@ import Slideshow from '../components/Slideshow'
 import './Home.css'
 
 const Home = () => {
-  const slideshowImages = [
-    '/images/slide1.jpg',
-    '/images/slide2.jpg',
-    '/images/slide3.jpg',
-    '/images/slide4.jpg'
-  ]
-
   return (
     <div className="home">
       <div className="hero">
-        <Slideshow images={slideshowImages} />
+        <Slideshow />
         <div className="hero-content">
           <h1>Welcome to Gillespie Therapy</h1>
           <p>Your journey to better health and wellness starts here</p>

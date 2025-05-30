@@ -4,15 +4,34 @@ import './Slideshow.css';
 const Slideshow = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const slides = [
+    {
+      image: '/images/slide1.jpg',
+      caption: 'Modern Treatment Facility'
+    },
+    {
+      image: '/images/slide2.jpg',
+      caption: 'State-of-the-Art Equipment'
+    },
+    {
+      image: '/images/slide3.jpg',
+      caption: 'Comfortable Recovery Space'
+    },
+    {
+      image: '/images/slide4.jpg',
+      caption: 'Professional Care Team'
+    }
+  ];
+
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prevIndex) => 
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        prevIndex === slides.length - 1 ? 0 : prevIndex + 1
       );
     }, 5000); // Change slide every 5 seconds
 
     return () => clearInterval(timer);
-  }, [images.length]);
+  }, [slides.length]);
 
   const goToSlide = (index) => {
     setCurrentIndex(index);
@@ -20,25 +39,29 @@ const Slideshow = ({ images }) => {
 
   const goToPrevious = () => {
     setCurrentIndex((prevIndex) => 
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+      prevIndex === 0 ? slides.length - 1 : prevIndex - 1
     );
   };
 
   const goToNext = () => {
     setCurrentIndex((prevIndex) => 
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      prevIndex === slides.length - 1 ? 0 : prevIndex + 1
     );
   };
 
   return (
     <div className="slideshow">
       <div className="slideshow-container">
-        {images.map((image, index) => (
+        {slides.map((slide, index) => (
           <div
             key={index}
             className={`slide ${index === currentIndex ? 'active' : ''}`}
-            style={{ backgroundImage: `url(${image})` }}
-          />
+            style={{ backgroundImage: `url(${slide.image})` }}
+          >
+            <div className="slide-caption">
+              <h3>{slide.caption}</h3>
+            </div>
+          </div>
         ))}
         <button className="slideshow-button prev" onClick={goToPrevious}>
           &#10094;
@@ -48,7 +71,7 @@ const Slideshow = ({ images }) => {
         </button>
       </div>
       <div className="slideshow-dots">
-        {images.map((_, index) => (
+        {slides.map((_, index) => (
           <span
             key={index}
             className={`dot ${index === currentIndex ? 'active' : ''}`}
