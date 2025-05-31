@@ -34,13 +34,19 @@ const About = () => {
 
           <div className="team-member">
             <div className="team-member-image">
-              <img src="/images/np1.jpg" alt="Nurse Practitioner" />
+              <img src="/images/JaredBio.jpg" alt="Jared Grunwald" />
             </div>
-            <h3>Dr. Sarah Chen, NP</h3>
-            <p className="team-member-title">Nurse Practitioner</p>
+            <h3>Jared Grunwald, PTA</h3>
+            <p className="team-member-title">Physical Therapist Assistant</p>
             <p className="team-member-bio">
-              Specializing in sports medicine and rehabilitation, Dr. Chen brings extensive experience in treating athletic injuries 
-              and helping patients return to peak performance.
+              Hi I'm Jared and I've been a Physical Therapist Assistant for almost a decade, and I absolutely love helping people feel their best. 
+              Before I got into PT, I worked as a personal trainer, so I've always been passionate about movement and helping others reach their goals.
+
+              I believe that movement is medicine, and I'm here to help you get back to doing the things you love. When I'm not at work, 
+              you'll probably find me spending time with my family – my favorite thing to do, especially with my daughter. 
+              My approach to therapy is pretty simple: "Ain't nothing to it but to do it."
+
+              Let's work together to get you moving and feeling your best!
             </p>
           </div>
 
