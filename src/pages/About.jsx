@@ -22,7 +22,7 @@ const About = () => {
         <div className="team-grid">
           <div className="team-member">
             <div className="team-member-image">
-              <img src="/images/np1.jpg" alt="Joe Gillespie" />
+              <img src="/images/JoeGBio.jpg" alt="Joe Gillespie" />
             </div>
             <h3>Joe Gillespie, DPT</h3>
             <p className="team-member-title">Physical Therapist & Founder</p>
