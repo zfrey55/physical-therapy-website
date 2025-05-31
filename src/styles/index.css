@@ -37,8 +37,8 @@ body {
 
 .logo {
   font-size: 1.5rem;
-  font-weight: bold;
-  color: #2c5282;
+  font-weight: 700;
+  color: #4A90E2;
 }
 
 .nav-links {
@@ -55,7 +55,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: #2c5282;
+  color: #4A90E2;
 }
 
 .main-content {
@@ -65,7 +65,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #2c5282 0%, #4299e1 100%);
+  background: linear-gradient(135deg, #4A90E2 0%, #87CEEB 100%);
   color: white;
   padding: 4rem 2rem;
   text-align: center;
@@ -101,7 +101,7 @@ body {
 
 /* Page Headers */
 .page-header {
-  background: linear-gradient(135deg, #2c5282 0%, #4299e1 100%);
+  background: linear-gradient(135deg, #4A90E2 0%, #87CEEB 100%);
   color: white;
   padding: 4rem 2rem;
   text-align: center;
@@ -139,7 +139,7 @@ body {
 .testimonials h2 {
   text-align: center;
   margin-bottom: 3rem;
-  color: #2c5282;
+  color: #4A90E2;
 }
 
 .testimonial-grid {
@@ -186,7 +186,7 @@ body {
 }
 
 .service-card h3 {
-  color: #2c5282;
+  color: #4A90E2;
   margin-bottom: 1rem;
 }
 
@@ -207,7 +207,7 @@ body {
 }
 
 .about-text h2 {
-  color: #2c5282;
+  color: #4A90E2;
   margin: 2rem 0 1rem;
 }
 
@@ -269,7 +269,7 @@ body {
 }
 
 .contact-item h3 {
-  color: #2c3e50;
+  color: #4A90E2;
   margin-bottom: 0.5rem;
 }
 
@@ -311,7 +311,7 @@ body {
 }
 
 .submit-button {
-  background-color: #3498db;
+  background-color: #4A90E2;
   color: white;
   padding: 1rem 2rem;
   border: none;
@@ -322,7 +322,7 @@ body {
 }
 
 .submit-button:hover {
-  background-color: #2980b9;
+  background-color: #87CEEB;
 }
 
 .hidden {
@@ -347,7 +347,7 @@ body {
 
 /* Footer */
 .footer {
-  background: #2c5282;
+  background: #4A90E2;
   color: white;
   padding: 3rem 2rem 1rem;
   margin-top: auto;

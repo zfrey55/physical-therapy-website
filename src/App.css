@@ -89,4 +89,50 @@ a:hover {
   h3 {
     font-size: 1.25rem;
   }
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4A90E2; /* Light blue */
+}
+
+.nav-links a:hover {
+  color: #4A90E2; /* Light blue */
+}
+
+.hero {
+  background: linear-gradient(135deg, #4A90E2 0%, #87CEEB 100%); /* Light blue gradient */
+}
+
+.page-header {
+  background: linear-gradient(135deg, #4A90E2 0%, #87CEEB 100%); /* Light blue gradient */
+}
+
+.testimonials h2 {
+  color: #4A90E2; /* Light blue */
+}
+
+.service-card h3 {
+  color: #4A90E2; /* Light blue */
+}
+
+.about-text h2 {
+  color: #4A90E2; /* Light blue */
+}
+
+.contact-item h3 {
+  color: #4A90E2; /* Light blue */
+}
+
+.submit-button {
+  background-color: #4A90E2; /* Light blue */
+}
+
+.submit-button:hover {
+  background-color: #87CEEB; /* Sky blue */
+}
+
+.footer {
+  background: #4A90E2; /* Light blue */
 } 
