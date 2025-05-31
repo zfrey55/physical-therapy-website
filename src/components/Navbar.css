@@ -3,20 +3,20 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #FDF6E3; /* soft sand */
+  box-shadow: 0 2px 4px rgba(224, 247, 250, 0.25); /* seafoam shadow */
 }
 
 .logo a {
+  color: #FF7F50; /* coral */
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .logo a:hover {
-  color: #007bff;
+  color: #E2C275; /* soft gold */
 }
 
 .nav-links {
@@ -27,15 +27,15 @@
   gap: 2rem;
 }
 
-.nav-links li a {
-  color: #333;
+.nav-links a {
   text-decoration: none;
+  color: #333;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.nav-links li a:hover {
-  color: #007bff;
+.nav-links a:hover {
+  color: #FF7F50; /* coral */
 }
 
 @media (max-width: 768px) {

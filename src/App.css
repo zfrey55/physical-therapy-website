@@ -20,6 +20,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FDF6E3; /* soft sand */
 }
 
 /* Typography */
@@ -45,20 +46,20 @@ h3 {
 
 /* Links */
 a {
-  color: #007bff;
+  color: #FF7F50; /* coral */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #0056b3;
+  color: #E2C275; /* soft gold */
 }
 
 /* Buttons */
 .cta-button {
   display: inline-block;
   padding: 1rem 2rem;
-  background-color: #007bff;
+  background-color: #FF7F50; /* coral */
   color: white;
   border-radius: 4px;
   text-decoration: none;
@@ -66,7 +67,7 @@ a:hover {
 }
 
 .cta-button:hover {
-  background-color: #0056b3;
+  background-color: #E2C275; /* soft gold */
   color: white;
 }
 
