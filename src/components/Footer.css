@@ -1,6 +1,7 @@
+/* Updated color scheme: White and Light Blue */
 .footer {
-  background-color: #E0F7FA; /* seafoam */
-  color: #333;
+  background-color: #87CEEB; /* Light Blue */
+  color: #FFFFFF;
   padding: 3rem 2rem 1rem;
   margin-top: auto;
 }
@@ -15,12 +16,12 @@
 
 .footer-section h4 {
   margin-bottom: 1rem;
-  color: #FF7F50; /* coral */
+  color: #FFFFFF;
 }
 
 .footer-bottom {
   text-align: center;
   margin-top: 2rem;
   padding-top: 2rem;
-  border-top: 1px solid rgba(255, 127, 80, 0.1); /* coral border */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 } 

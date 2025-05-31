@@ -33,7 +33,7 @@
 .services-preview {
   padding: 4rem 2rem;
   text-align: center;
-  background-color: #FDF6E3; /* soft sand */
+  background-color: #FFFFFF; /* White */
 }
 
 .services-preview h2 {
@@ -64,7 +64,7 @@
 }
 
 .service-card h3 {
-  color: #FF7F50; /* coral */
+  color: #87CEEB; /* Light Blue */
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -77,7 +77,7 @@
 /* Why Choose Us Section */
 .why-choose-us {
   padding: 4rem 2rem;
-  background-color: #E0F7FA; /* seafoam */
+  background-color: #FFFFFF; /* White */
   text-align: center;
 }
 
@@ -103,7 +103,7 @@
 }
 
 .feature h3 {
-  color: #FF7F50; /* coral */
+  color: #87CEEB; /* Light Blue */
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -115,7 +115,7 @@
 
 /* Testimonials Section */
 .testimonials {
-  background-color: #FDF6E3; /* soft sand */
+  background-color: #FFFFFF; /* White */
   padding: 4rem 2rem;
 }
 
@@ -143,7 +143,7 @@
 .testimonial-card cite {
   display: block;
   margin-top: 1rem;
-  color: #FF7F50; /* coral */
+  color: #87CEEB; /* Light Blue */
   font-style: italic;
 }
 
@@ -169,16 +169,15 @@
 .cta-button {
   display: inline-block;
   padding: 1rem 2rem;
-  background-color: #FF7F50; /* coral */
-  color: white;
+  background-color: #87CEEB; /* Light Blue */
+  color: #FFFFFF;
   border-radius: 4px;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: #E2C275; /* soft gold */
-  color: white;
+  background-color: #5F9EA0; /* Slightly darker light blue */
 }
 
 /* View All Button */

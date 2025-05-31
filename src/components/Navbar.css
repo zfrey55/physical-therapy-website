@@ -1,14 +1,15 @@
+/* Updated color scheme: White and Light Blue */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #FDF6E3; /* soft sand */
-  box-shadow: 0 2px 4px rgba(224, 247, 250, 0.25); /* seafoam shadow */
+  background-color: #FFFFFF; /* White */
+  box-shadow: 0 2px 4px rgba(135, 206, 235, 0.25); /* Light blue shadow */
 }
 
 .logo a {
-  color: #FF7F50; /* coral */
+  color: #87CEEB; /* Light Blue */
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
@@ -16,7 +17,7 @@
 }
 
 .logo a:hover {
-  color: #E2C275; /* soft gold */
+  color: #5F9EA0; /* Slightly darker light blue */
 }
 
 .nav-links {
@@ -35,7 +36,7 @@
 }
 
 .nav-links a:hover {
-  color: #FF7F50; /* coral */
+  color: #87CEEB; /* Light Blue */
 }
 
 @media (max-width: 768px) {

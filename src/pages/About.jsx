@@ -22,7 +22,7 @@ const About = () => {
         <div className="team-grid">
           <div className="team-member">
             <div className="team-member-image">
-              <img src="/images/JoeGBio.jpg" alt="Joe Gillespie" />
+              <img src="/images/joe-gillespie.jpg" alt="Joe Gillespie" />
             </div>
             <h3>Joe Gillespie, DPT</h3>
             <p className="team-member-title">Physical Therapist & Founder</p>
@@ -34,7 +34,7 @@ const About = () => {
 
           <div className="team-member">
             <div className="team-member-image">
-              <img src="/images/JaredBio.jpg" alt="Jared Grunwald" />
+              <img src="/images/jared-grunwald.jpg" alt="Jared Grunwald" />
             </div>
             <h3>Jared Grunwald, PTA</h3>
             <p className="team-member-title">Physical Therapist Assistant</p>
