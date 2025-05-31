@@ -21,7 +21,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #FDF6E3; /* soft sand */
+  background-color: #FFFFFF; /* White */
+  color: #4A4A4A; /* Cool Gray */
 }
 
 /* Typography */
@@ -47,29 +48,29 @@ h3 {
 
 /* Links */
 a {
-  color: #FF7F50; /* coral */
+  color: #00B4B4; /* Aqua/Teal */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #E2C275; /* soft gold */
+  color: #008B8B; /* Darker Teal */
 }
 
 /* Buttons */
 .cta-button {
   display: inline-block;
   padding: 1rem 2rem;
-  background-color: #FF7F50; /* coral */
-  color: white;
+  background-color: #00B4B4; /* Aqua/Teal */
+  color: #FFFFFF;
   border-radius: 4px;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: #E2C275; /* soft gold */
-  color: white;
+  background-color: #008B8B; /* Darker Teal */
+  color: #FFFFFF;
 }
 
 /* Responsive design */
