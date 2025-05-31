@@ -27,7 +27,7 @@ function App() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "PhysicalTherapy",
-          "name": "Gillespie Therapy",
+          "name": "Gillespie Physical Therapy",
           "description": "Professional physical therapy services specializing in sports injuries, rehabilitation, and pain management.",
           "address": {
             "@type": "PostalAddress",

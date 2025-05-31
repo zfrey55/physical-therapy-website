@@ -5,14 +5,14 @@ const About = () => {
   return (
     <div className="about">
       <div className="about-hero">
-        <h1>About Gillespie Therapy</h1>
+        <h1>About Gillespie Physical Therapy</h1>
         <p>Dedicated to your health and wellness journey</p>
       </div>
 
       <section className="our-story">
         <h2>Our Story</h2>
         <p>
-          Founded by Joe Gillespie, Gillespie Therapy has been a cornerstone of physical therapy excellence in our community. 
+          Founded by Joe Gillespie, Gillespie Physical Therapy has been a cornerstone of physical therapy excellence in our community. 
           Our practice combines cutting-edge techniques with personalized care to ensure the best outcomes for our patients.
         </p>
       </section>

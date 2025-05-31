@@ -16,7 +16,7 @@ const Home = () => {
       <div className="hero">
         <Slideshow images={slideshowImages} />
         <div className="hero-content">
-          <h1>Welcome to Gillespie Therapy</h1>
+          <h1>Welcome to Gillespie Physical Therapy</h1>
           <p>Your journey to better health and wellness starts here</p>
           <Link to="/contact" className="cta-button">Book an Appointment</Link>
         </div>
@@ -42,7 +42,7 @@ const Home = () => {
       </section>
 
       <section className="why-choose-us">
-        <h2>Why Choose Gillespie Therapy?</h2>
+        <h2>Why Choose Gillespie Physical Therapy?</h2>
         <div className="features-grid">
           <div className="feature">
             <h3>Expert Care</h3>
@@ -63,11 +63,11 @@ const Home = () => {
         <h2>What Our Patients Say</h2>
         <div className="testimonial-grid">
           <div className="testimonial-card">
-            <p>"The team at Gillespie Therapy helped me recover from my sports injury faster than I expected. Their expertise and dedication are unmatched."</p>
+            <p>"The team at Gillespie Physical Therapy helped me recover from my sports injury faster than I expected. Their expertise and dedication are unmatched."</p>
             <cite>- Sarah M.</cite>
           </div>
           <div className="testimonial-card">
-            <p>"After my surgery, the rehabilitation program at Gillespie Therapy was crucial to my recovery. I'm grateful for their support and guidance."</p>
+            <p>"After my surgery, the rehabilitation program at Gillespie Physical Therapy was crucial to my recovery. I'm grateful for their support and guidance."</p>
             <cite>- John D.</cite>
           </div>
         </div>

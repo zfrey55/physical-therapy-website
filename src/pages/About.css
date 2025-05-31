@@ -44,7 +44,7 @@
 /* Our Team Section */
 .our-team {
   padding: 3rem 0;
-  background-color: #f8f9fa;
+  background-color: #E0F7FA; /* seafoam */
   text-align: center;
 }
 
@@ -66,15 +66,16 @@
 }
 
 .team-member {
-  background-color: white;
+  background-color: #FDF6E3; /* soft sand */
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(224, 247, 250, 0.25); /* seafoam shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .team-member:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(255, 127, 80, 0.15); /* coral shadow */
 }
 
 .team-member-image {
@@ -83,7 +84,8 @@
   margin: 0 auto 1.5rem;
   border-radius: 50%;
   overflow: hidden;
-  border: 4px solid #007bff;
+  border: 4px solid #E2C275; /* soft gold */
+  background: linear-gradient(135deg, #FDF6E3 0%, #E0F7FA 100%); /* sand to seafoam */
 }
 
 .team-member-image img {
@@ -99,7 +101,7 @@
 }
 
 .team-member-title {
-  color: #007bff;
+  color: #FF7F50; /* coral */
   font-weight: 600;
   margin-bottom: 1rem;
 }

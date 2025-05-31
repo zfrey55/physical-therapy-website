@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
-          <h4>Gillespie Therapy</h4>
+          <h4>Gillespie Physical Therapy</h4>
           <p>Your journey to better health starts here</p>
         </div>
         <div className="footer-section">
@@ -21,7 +21,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2024 Gillespie Therapy. All rights reserved.</p>
+        <p>&copy; 2024 Gillespie Physical Therapy. All rights reserved.</p>
       </div>
     </footer>
   );
