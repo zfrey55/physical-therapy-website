@@ -52,9 +52,10 @@
 
 .service-card {
   padding: 2rem;
-  background-color: #fff;
+  background-color: #FFFFFF;
+  border: 1.5px solid #E0E7EF; /* subtle cool gray outline */
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(224, 247, 250, 0.25); /* seafoam shadow */
+  box-shadow: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -97,9 +98,10 @@
 
 .feature {
   padding: 2rem;
-  background-color: #FDF6E3; /* soft sand */
+  background-color: #FFFFFF;
+  border: 1.5px solid #E0E7EF; /* subtle cool gray outline */
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(224, 247, 250, 0.25); /* seafoam shadow */
+  box-shadow: none;
 }
 
 .feature h3 {
@@ -134,10 +136,11 @@
 }
 
 .testimonial-card {
-  background: #fff;
+  background: #FFFFFF;
   padding: 2rem;
+  border: 1.5px solid #E0E7EF; /* subtle cool gray outline */
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(224, 247, 250, 0.25); /* seafoam shadow */
+  box-shadow: none;
 }
 
 .testimonial-card cite {

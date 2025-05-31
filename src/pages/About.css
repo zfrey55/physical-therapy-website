@@ -66,10 +66,11 @@
 }
 
 .team-member {
-  background-color: #FFFFFF; /* White */
+  background-color: #FFFFFF;
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(135, 206, 235, 0.25); /* Light blue shadow */
+  box-shadow: none;
+  border: 1.5px solid #E0E7EF; /* subtle cool gray outline */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -136,10 +137,11 @@
 }
 
 .value {
-  background-color: white;
+  background-color: #FFFFFF;
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: none;
+  border: 1.5px solid #E0E7EF; /* subtle cool gray outline */
 }
 
 .value h3 {

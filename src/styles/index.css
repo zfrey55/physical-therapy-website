@@ -124,10 +124,11 @@ body {
 }
 
 .feature-card {
-  background: white;
+  background-color: #FFFFFF;
+  border: 1.5px solid #E0E7EF;
+  box-shadow: none;
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   text-align: center;
 }
 
@@ -152,10 +153,11 @@ body {
 }
 
 .testimonial-card {
-  background: white;
+  background-color: #FFFFFF;
+  border: 1.5px solid #E0E7EF;
+  box-shadow: none;
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .testimonial-card cite {
@@ -180,10 +182,11 @@ body {
 }
 
 .service-card {
-  background: white;
+  background-color: #FFFFFF;
+  border: 1.5px solid #E0E7EF;
+  box-shadow: none;
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .service-card h3 {
@@ -229,10 +232,11 @@ body {
 }
 
 .team-member {
-  background: white;
+  background-color: #FFFFFF;
+  border: 1.5px solid #E0E7EF;
+  box-shadow: none;
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   text-align: center;
 }
 
