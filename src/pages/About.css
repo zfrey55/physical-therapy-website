@@ -99,7 +99,7 @@
 /* Specific styling for Jared Grunwald's image to show more of the picture */
 .team-member:nth-child(2) .team-member-image img {
   object-fit: cover;
-  object-position: center 35%; /* Move focus point higher to show more of Jared's face */
+  object-position: center 60%; /* Move focus point much higher to show Jared's full face */
 }
 
 .team-member h3 {
