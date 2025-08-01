@@ -93,6 +93,13 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 25%; /* Show more of the top portion of all images */
+}
+
+/* Specific styling for Jared Grunwald's image to show more of the picture */
+.team-member:nth-child(2) .team-member-image img {
+  object-fit: cover;
+  object-position: center 20%; /* Adjust this value to show more of the top/bottom of the image */
 }
 
 .team-member h3 {
