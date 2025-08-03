@@ -86,7 +86,7 @@ const About = () => {
 
           <div className="team-member">
             <div className="team-member-image">
-              <img src="/images/tucker.jpg" alt="Tucker" />
+              <img src="/images/Tucker.jpg" alt="Tucker" />
             </div>
             <h3>Tucker</h3>
             <p className="team-member-title">Chief Barketing Officer & Therapy Dog</p>
