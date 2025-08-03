@@ -11,11 +11,7 @@ const Contact = () => {
       <section className="contact-content">
         <div className="contact-info">
           <h2>Get in Touch</h2>
-          <div className="info-item">
-            <h3>Address</h3>
-            <p>123 Wellness Street</p>
-            <p>San Francisco, CA 94105</p>
-          </div>
+
           
           <div className="info-item">
             <h3>Phone</h3>

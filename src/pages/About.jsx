@@ -33,6 +33,17 @@ const About = () => {
 
           <div className="team-member">
             <div className="team-member-image">
+              <img src="/images/nancy-frey-gillespie.jpg" alt="Nancy Frey-Gillespie" />
+            </div>
+            <h3>Nancy Frey-Gillespie</h3>
+            <p className="team-member-title">General Manager</p>
+            <p className="team-member-bio">
+              Hi, I'm Nancy! I've spent over 15 years managing investment portfolios for high-net-worth clients at Wall Street firms, and 25 years working in South Florida's luxury residential real estate market. But my real passion lies in wellness—I've been a personal trainer and group fitness coach for over 30 years, helping runners and triathletes live healthier, balanced lives through movement, nutrition, and mental well-being. When I'm not working, you'll find me racing across the country in running, biking, and swimming events...while my husband cheers me on from the sidelines. I believe that investing in your health is just as important as investing in your future, and I'm here to help you thrive in both.
+            </p>
+          </div>
+
+          <div className="team-member">
+            <div className="team-member-image">
               <img src="/images/jared-grunwald.jpg" alt="Jared Grunwald" />
             </div>
             <h3>Jared Grunwald, PTA</h3>
@@ -70,6 +81,17 @@ const About = () => {
             <p className="team-member-bio">
               Specializing in geriatric care and mobility enhancement, Dr. Thompson is dedicated to helping older adults 
               maintain their independence and quality of life through targeted physical therapy.
+            </p>
+          </div>
+
+          <div className="team-member">
+            <div className="team-member-image">
+              <img src="/images/tucker.jpg" alt="Tucker" />
+            </div>
+            <h3>Tucker</h3>
+            <p className="team-member-title">Chief Barketing Officer & Therapy Dog</p>
+            <p className="team-member-bio">
+              Hi, I'm Tucker! I'm the four-legged member of the Gillespie Physical Therapy team, and I take my job as Chief Morale Officer very seriously. My main responsibilities include greeting patients with enthusiastic tail wags, providing emotional support during therapy sessions, and ensuring everyone leaves with a smile on their face. I'm a natural at reading people's energy and know exactly when someone needs a gentle nudge or a comforting presence. When I'm not working the clinic floor, you might find me supervising from my favorite spot or taking well-deserved naps. I believe that healing isn't just about physical therapy—it's about creating a warm, welcoming environment where patients feel comfortable and supported. After all, sometimes the best medicine is a friendly face and a wagging tail!
             </p>
           </div>
         </div>

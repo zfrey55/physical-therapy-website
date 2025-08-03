@@ -5,10 +5,10 @@
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 4rem 0;
+  padding: 2rem 0;
   background-color: rgba(224, 247, 250, 0.8); /* seafoam overlay */
   color: #333;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   position: relative;
   z-index: 1;
 }
@@ -38,7 +38,7 @@
 
 /* Services Preview Section */
 .services-preview {
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
   text-align: center;
   background-color: #FFFFFF; /* White */
 }
@@ -84,7 +84,7 @@
 
 /* Why Choose Us Section */
 .why-choose-us {
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
   background-color: #FFFFFF; /* White */
   text-align: center;
 }
@@ -125,7 +125,7 @@
 /* Testimonials Section */
 .testimonials {
   background-color: #FFFFFF; /* White */
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
 }
 
 .testimonials h2 {
@@ -159,7 +159,7 @@
 
 /* CTA Section */
 .cta-section {
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
   background-color: #E0F7FA; /* seafoam */
   text-align: center;
 }
