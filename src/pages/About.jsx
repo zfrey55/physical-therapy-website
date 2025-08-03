@@ -24,11 +24,10 @@ const About = () => {
             <div className="team-member-image">
               <img src="/images/joe-gillespie.jpg" alt="Joe Gillespie" />
             </div>
-            <h3>Joe Gillespie, DPT</h3>
+            <h3>Joe Gillespie, MS PT</h3>
             <p className="team-member-title">Physical Therapist & Founder</p>
             <p className="team-member-bio">
-              With over 15 years of experience in physical therapy, Joe Gillespie leads our practice with expertise and dedication. 
-              His passion for helping patients achieve their optimal physical health has made him a trusted name in the community.
+              Hi, I'm Joe! I've been working in physical therapy for over 25 years, and I've had the privilege of helping everyone from weekend warriors to pro athletes get back on their feet. I got my start at HealthSouth Sports Medicine, rehabbing Miami Dolphins and Heat players after surgery, and I've even worked with the LPGA Tour to keep golfers fit and injury-free. I've got master's degrees in both Physical Therapy and Exercise Physiology from FIU, and I still love learning about how the body moves and heals. When I'm not in the clinic, I'm usually playing tennis, golf, or pickleball—or racing through a triathlon with my wife. I also never miss a chance to catch college football with my friends. Let's work together to get you moving and feeling your best!
             </p>
           </div>
 

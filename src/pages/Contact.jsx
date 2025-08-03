@@ -19,18 +19,18 @@ const Contact = () => {
           
           <div className="info-item">
             <h3>Phone</h3>
-            <p>(555) 123-4567</p>
+            <p>(561) 955-9384</p>
           </div>
           
           <div className="info-item">
             <h3>Email</h3>
-            <p>info@ptwellness.com</p>
+            <p>gillespietherapy@gmail.com</p>
           </div>
           
           <div className="info-item">
             <h3>Hours</h3>
-            <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-            <p>Saturday: 9:00 AM - 1:00 PM</p>
+            <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+            <p>Saturday: By appointment only</p>
             <p>Sunday: Closed</p>
           </div>
         </div>
@@ -77,6 +77,27 @@ const Contact = () => {
                 name="phone"
                 placeholder="(555) 555-5555"
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required
+              />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="dateOfBirth">Date of Birth</label>
+              <input
+                type="date"
+                id="dateOfBirth"
+                name="dateOfBirth"
+                required
+              />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="primaryInsurance">Primary Insurance</label>
+              <input
+                type="text"
+                id="primaryInsurance"
+                name="primaryInsurance"
+                placeholder="e.g., Medicare, Blue Cross, Aetna"
                 required
               />
             </div>

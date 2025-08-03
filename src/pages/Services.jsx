@@ -15,7 +15,6 @@ function Services() {
           <ul>
             <li>Post-surgery rehabilitation</li>
             <li>Chronic pain management</li>
-            <li>Balance and gait training</li>
             <li>Strength and conditioning</li>
           </ul>
         </div>
@@ -36,7 +35,6 @@ function Services() {
           <p>Effective pain relief and management techniques:</p>
           <ul>
             <li>Manual therapy</li>
-            <li>Dry needling</li>
             <li>Ultrasound therapy</li>
             <li>Electrical stimulation</li>
           </ul>
@@ -53,32 +51,23 @@ function Services() {
           </ul>
         </div>
 
-        <div className="service-card">
-          <h3>Workplace Injury</h3>
-          <p>Treatment for work-related injuries and prevention:</p>
-          <ul>
-            <li>Ergonomic assessment</li>
-            <li>Work conditioning</li>
-            <li>Injury prevention education</li>
-            <li>Return to work programs</li>
-          </ul>
-        </div>
+
 
         <div className="service-card">
-          <h3>Vestibular Therapy</h3>
-          <p>Treatment for balance and dizziness issues:</p>
+          <h3>Balance and Gait Training</h3>
+          <p>Specialized training to improve balance and walking ability:</p>
           <ul>
-            <li>Vertigo treatment</li>
             <li>Balance rehabilitation</li>
-            <li>Gaze stabilization</li>
             <li>Fall prevention</li>
+            <li>Gait analysis and training</li>
+            <li>Mobility enhancement</li>
           </ul>
         </div>
       </section>
 
       <section className="insurance-info">
         <h2>Insurance & Payment</h2>
-        <p>We accept most major insurance providers and offer flexible payment options. Contact us to verify your insurance coverage.</p>
+        <p>Medicare accepted, some private insurances accepted. Please include your insurance information with your contact form.</p>
       </section>
     </div>
   )
