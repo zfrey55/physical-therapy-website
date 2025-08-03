@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Contact</h4>
           <p>Phone: (561) 955-9384</p>
-          <p>Email: gillespietherapy@gmail.com</p>
+          <p>Email: info@gillespiept.com</p>
         </div>
         <div className="footer-section">
           <h4>Hours</h4>
