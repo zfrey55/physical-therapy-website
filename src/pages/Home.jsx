@@ -57,6 +57,7 @@ const Home = () => {
             <p>Track record of successful patient outcomes and positive testimonials.</p>
           </div>
         </div>
+        <Link to="/about" className="view-all-button">Meet Our Team</Link>
       </section>
 
       <section className="testimonials">

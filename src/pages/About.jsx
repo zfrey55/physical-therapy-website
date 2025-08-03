@@ -42,23 +42,34 @@ const About = () => {
             </p>
           </div>
 
-          <div className="team-member">
-            <div className="team-member-image">
-              <img src="/images/jared-grunwald.jpg" alt="Jared Grunwald" />
-            </div>
-            <h3>Jared Grunwald, PTA</h3>
-            <p className="team-member-title">Physical Therapist Assistant</p>
-            <p className="team-member-bio">
-              Hi I'm Jared and I've been a Physical Therapist Assistant for almost a decade, and I absolutely love helping people feel their best. 
-              Before I got into PT, I worked as a personal trainer, so I've always been passionate about movement and helping others reach their goals.
+                     <div className="team-member">
+             <div className="team-member-image">
+               <img src="/images/jared-grunwald.jpg" alt="Jared Grunwald" />
+             </div>
+             <h3>Jared Grunwald, PTA</h3>
+             <p className="team-member-title">Physical Therapist Assistant</p>
+             <p className="team-member-bio">
+               Hi I'm Jared and I've been a Physical Therapist Assistant for almost a decade, and I absolutely love helping people feel their best. 
+               Before I got into PT, I worked as a personal trainer, so I've always been passionate about movement and helping others reach their goals.
 
-              I believe that movement is medicine, and I'm here to help you get back to doing the things you love. When I'm not at work, 
-              you'll probably find me spending time with my family – my favorite thing to do, especially with my daughter. 
-              My approach to therapy is pretty simple: "Ain't nothing to it but to do it."
+               I believe that movement is medicine, and I'm here to help you get back to doing the things you love. When I'm not at work, 
+               you'll probably find me spending time with my family – my favorite thing to do, especially with my daughter. 
+               My approach to therapy is pretty simple: "Ain't nothing to it but to do it."
 
-              Let's work together to get you moving and feeling your best!
-            </p>
-          </div>
+               Let's work together to get you moving and feeling your best!
+             </p>
+           </div>
+
+           <div className="team-member">
+             <div className="team-member-image">
+               <img src="/images/np1.jpg" alt="Deana Hicks" />
+             </div>
+             <h3>Deana Hicks, PTA</h3>
+             <p className="team-member-title">Physical Therapy Assistant</p>
+             <p className="team-member-bio">
+               Bio and picture to be updated at a later date.
+             </p>
+           </div>
 
           <div className="team-member">
             <div className="team-member-image">
@@ -91,7 +102,7 @@ const About = () => {
             <h3>Tucker</h3>
             <p className="team-member-title">Chief Barketing Officer & Therapy Dog</p>
             <p className="team-member-bio">
-              Hi, I'm Tucker! I'm the four-legged member of the Gillespie Physical Therapy team, and I take my job as Chief Morale Officer very seriously. My main responsibilities include greeting patients with enthusiastic tail wags, providing emotional support during therapy sessions, and ensuring everyone leaves with a smile on their face. I'm a natural at reading people's energy and know exactly when someone needs a gentle nudge or a comforting presence. When I'm not working the clinic floor, you might find me supervising from my favorite spot or taking well-deserved naps. I believe that healing isn't just about physical therapy—it's about creating a warm, welcoming environment where patients feel comfortable and supported. After all, sometimes the best medicine is a friendly face and a wagging tail!
+              Hi, I'm Tucker! I'm the four-legged member of the Gillespie Physical Therapy team, and I take my job as Chief Barketing Officer very seriously. My main responsibilities include greeting patients with enthusiastic tail wags, providing emotional support during therapy sessions, and ensuring everyone leaves with a smile on their face. I'm a natural at reading people's energy and know exactly when someone needs a gentle nudge or a comforting presence. When I'm not working the clinic floor, you might find me supervising from my favorite spot or taking well-deserved naps. I believe that healing isn't just about physical therapy—it's about creating a warm, welcoming environment where patients feel comfortable and supported. After all, sometimes the best medicine is a friendly face and a wagging tail!
             </p>
           </div>
         </div>
