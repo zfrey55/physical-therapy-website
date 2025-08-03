@@ -51,7 +51,7 @@ const Locations = () => {
         <h2>Find Us</h2>
         <div className="map-container">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.5!2d-80.1!3d26.4!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d8d5c5c5c5c5c5%3A0x5c5c5c5c5c5c5c5!2sThe+Polo+Club+at+Boca+Raton!5e0!3m2!1sen!2sus!4v1234567890!5m2!1sen!2sus"
+            src="https://www.google.com/maps/d/embed?mid=1tXswMHs3RwzDaLEKWQtf823DYssXZeY&ehbc=2E312F"
             width="100%"
             height="450"
             style={{ border: 0 }}

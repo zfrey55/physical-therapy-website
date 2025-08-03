@@ -71,29 +71,7 @@ const About = () => {
              </p>
            </div>
 
-          <div className="team-member">
-            <div className="team-member-image">
-              <img src="/images/np2.jpg" alt="Nurse Practitioner" />
-            </div>
-            <h3>Dr. Michael Rodriguez, NP</h3>
-            <p className="team-member-title">Nurse Practitioner</p>
-            <p className="team-member-bio">
-              With a focus on chronic pain management and recovery, Dr. Rodriguez helps patients develop long-term strategies 
-              for maintaining their physical health and well-being.
-            </p>
-          </div>
-
-          <div className="team-member">
-            <div className="team-member-image">
-              <img src="/images/np3.jpg" alt="Nurse Practitioner" />
-            </div>
-            <h3>Dr. Emily Thompson, NP</h3>
-            <p className="team-member-title">Nurse Practitioner</p>
-            <p className="team-member-bio">
-              Specializing in geriatric care and mobility enhancement, Dr. Thompson is dedicated to helping older adults 
-              maintain their independence and quality of life through targeted physical therapy.
-            </p>
-          </div>
+          
 
           <div className="team-member">
             <div className="team-member-image">
