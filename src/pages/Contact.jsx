@@ -20,7 +20,7 @@ const Contact = () => {
           
           <div className="info-item">
             <h3>Email</h3>
-            <p>info@gillespiept.com</p>
+            <p>gillespietherapy@gmail.com</p>
           </div>
           
           <div className="info-item">
