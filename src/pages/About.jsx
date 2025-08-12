@@ -62,12 +62,12 @@ const About = () => {
 
            <div className="team-member">
              <div className="team-member-image">
-               <img src="/images/np1.jpg" alt="Deana Hicks" />
+               <img src="/images/Deana-Hicks.jpg" alt="Deana Hicks" />
              </div>
              <h3>Deana Hicks, PTA</h3>
              <p className="team-member-title">Physical Therapy Assistant</p>
              <p className="team-member-bio">
-               Bio and picture to be updated at a later date.
+               Hi I'm Deana and I am a dedicated and compassionate Physical Therapy Assistant committed to helping patients achieve their rehabilitation goals, and improve their quality of life. I have 19 years of experience in an outpatient clinic, specializing in patient's with orthopedic and sport injuries by using therapeutic exercise, manual therapy, modalities, and patient education to improve patient's mobility, function, and overall well-being. My Motto is "A body in motion stays in motion". Let's get moving!
              </p>
            </div>
 
