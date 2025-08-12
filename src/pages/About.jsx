@@ -49,7 +49,7 @@ const About = () => {
              <h3>Jared Grunwald, PTA</h3>
              <p className="team-member-title">Physical Therapist Assistant</p>
              <p className="team-member-bio">
-               Hi I'm Jared and I've been a Physical Therapist Assistant for almost a decade, and I absolutely love helping people feel their best. 
+               Hi I'm Jared! I've been a Physical Therapist Assistant for almost a decade, and I absolutely love helping people feel their best. 
                Before I got into PT, I worked as a personal trainer, so I've always been passionate about movement and helping others reach their goals.
 
                I believe that movement is medicine, and I'm here to help you get back to doing the things you love. When I'm not at work, 
@@ -67,7 +67,7 @@ const About = () => {
              <h3>Deana Hicks, PTA</h3>
              <p className="team-member-title">Physical Therapy Assistant</p>
              <p className="team-member-bio">
-               Hi I'm Deana and I am a dedicated and compassionate Physical Therapy Assistant committed to helping patients achieve their rehabilitation goals, and improve their quality of life. I have 19 years of experience in an outpatient clinic, specializing in patient's with orthopedic and sport injuries by using therapeutic exercise, manual therapy, modalities, and patient education to improve patient's mobility, function, and overall well-being. My Motto is "A body in motion stays in motion". Let's get moving!
+               Hi I'm Deana! I am a dedicated and compassionate Physical Therapy Assistant committed to helping patients achieve their rehabilitation goals, and improve their quality of life. I have 19 years of experience in an outpatient clinic, specializing in patient's with orthopedic and sport injuries by using therapeutic exercise, manual therapy, modalities, and patient education to improve patient's mobility, function, and overall well-being. My Motto is "A body in motion stays in motion". Let's get moving!
              </p>
            </div>
 
