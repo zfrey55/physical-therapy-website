@@ -17,7 +17,7 @@ const Locations = () => {
             <p className="city">Boca Raton, FL 33496</p>
           </div>
           <div className="contact-info">
-            <p><strong>Email:</strong> info@gillespiept.com</p>
+            <p><strong>Email:</strong> gillespietherapy@gmail.com</p>
             <p><strong>Phone:</strong> (561) 955-9384</p>
           </div>
         </div>
@@ -29,7 +29,7 @@ const Locations = () => {
             <p className="city">Delray Beach, FL 33446</p>
           </div>
           <div className="contact-info">
-            <p><strong>Email:</strong> info@gillespiept.com</p>
+            <p><strong>Email:</strong> gillespietherapy@gmail.com</p>
             <p><strong>Phone:</strong> (561) 955-9384</p>
           </div>
         </div>
@@ -41,7 +41,7 @@ const Locations = () => {
             <p className="city">Boca Raton, FL 33433</p>
           </div>
           <div className="contact-info">
-            <p><strong>Email:</strong> info@gillespiept.com</p>
+            <p><strong>Email:</strong> gillespietherapy@gmail.com</p>
             <p><strong>Phone:</strong> (561) 955-9384</p>
           </div>
         </div>
