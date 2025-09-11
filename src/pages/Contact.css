@@ -1,4 +1,4 @@
-.locations-page {
+.contact-page {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
@@ -20,56 +20,103 @@
   color: #7f8c8d;
 }
 
-.locations-grid {
+.contact-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
   margin-bottom: 3rem;
 }
 
-.location-card {
+.contact-info {
   background: white;
-  border-radius: 10px;
   padding: 2rem;
+  border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.location-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-}
-
-.location-card h3 {
+.contact-info h2 {
   color: #2c3e50;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #3498db;
-  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
 }
 
-.location-info {
-  margin-bottom: 1.5rem;
+.info-item {
+  margin-bottom: 2rem;
 }
 
-.location-info .address {
-  font-size: 1.1rem;
+.info-item h3 {
+  color: #3498db;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.info-item p {
   color: #34495e;
   margin-bottom: 0.5rem;
 }
 
-.location-info .city {
+.contact-form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h2 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.75rem;
+  border: 2px solid #ecf0f1;
+  border-radius: 5px;
   font-size: 1rem;
-  color: #7f8c8d;
+  transition: border-color 0.3s ease;
 }
 
-.contact-info p {
-  margin-bottom: 0.5rem;
-  color: #34495e;
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #3498db;
 }
 
-.contact-info strong {
-  color: #2c3e50;
+.submit-button {
+  background: #3498db;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background: #2980b9;
+}
+
+.hidden {
+  display: none;
 }
 
 .map-section {
@@ -110,11 +157,6 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.map-container p {
-  color: #7f8c8d;
-  font-size: 1.1rem;
-}
-
 .map-info {
   padding: 1.5rem;
   background: white;
@@ -146,7 +188,7 @@
 }
 
 @media (max-width: 768px) {
-  .locations-page {
+  .contact-page {
     padding: 1rem;
   }
   
@@ -154,12 +196,13 @@
     font-size: 2rem;
   }
   
-  .locations-grid {
+  .contact-content {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 2rem;
   }
   
-  .location-card {
+  .contact-info,
+  .contact-form-container {
     padding: 1.5rem;
   }
   
@@ -167,4 +210,4 @@
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-} 
+}
