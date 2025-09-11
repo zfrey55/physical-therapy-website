@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className="contact-page">
+    <div className="contact-page" id="top">
       <section className="page-header">
         <h1>Contact Us</h1>
         <p>Get in touch with us to schedule an appointment or ask questions</p>
@@ -131,8 +131,24 @@ const Contact = () => {
       <section className="map-section">
         <h2>Find Us</h2>
         <div className="map-container">
-          {/* Add your map embed code here */}
-          <p>Map will be displayed here</p>
+        <iframe
+            src="https://www.google.com/maps/d/edit?mid=10qRxfft8VhL3CtG5B-dCPyQoF6Eqjf4&usp=sharing"
+            width="100%"
+            height="450"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Gillespie Physical Therapy Locations"
+        ></iframe>
+          <div className="map-info">
+            <p><strong>Our Locations:</strong></p>
+            <ul>
+              <li>The Polo Club at Boca Raton - 5400 Champion Blvd, Boca Raton FL 33496</li>
+              <li>Mizner Country Club - 16104 Mizner Club Drive, Delray Beach FL 33446</li>
+              <li>Boca Pointe - 6909 SW 18th St, Ste A114, Boca Raton FL 33433</li>
+            </ul>
+          </div>
         </div>
       </section>
     </div>

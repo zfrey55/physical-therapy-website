@@ -97,9 +97,9 @@
 }
 
 /* Specific styling for Jared Grunwald's image to show more of the picture */
-.team-member:nth-child(2) .team-member-image img {
+.team-member:nth-child(3) .team-member-image img {
   object-fit: cover;
-  object-position: center 30%; /* Position similar to Joe's image */
+  object-position: center 25%; /* Show more of the top portion of the image */
 }
 
 .team-member h3 {

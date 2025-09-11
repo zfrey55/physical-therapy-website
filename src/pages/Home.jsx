@@ -18,7 +18,7 @@ const Home = () => {
         <div className="hero-content">
           <h1>Welcome to Gillespie Physical Therapy</h1>
           <p>Your journey to better health and wellness starts here</p>
-          <Link to="/contact" className="cta-button">Book an Appointment</Link>
+          <Link to="/contact#top" className="cta-button">Book an Appointment</Link>
         </div>
       </div>
 
@@ -77,7 +77,7 @@ const Home = () => {
       <section className="cta-section">
         <h2>Start Your Journey to Better Health</h2>
         <p>Take the first step towards a healthier, more active lifestyle. Contact us today to schedule your appointment.</p>
-        <Link to="/contact" className="cta-button">Book an Appointment</Link>
+        <Link to="/contact#top" className="cta-button">Book an Appointment</Link>
       </section>
     </div>
   )
