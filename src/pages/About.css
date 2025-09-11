@@ -99,7 +99,7 @@
 /* Specific styling for Jared Grunwald's image to show the top of the picture */
 .team-member:nth-child(3) .team-member-image img {
   object-fit: cover;
-  object-position: center 10%; /* Show the top portion of the image */
+  object-position: center 5%; /* Show more of the top portion of the image */
   transform: scale(1.1); /* Slight zoom to focus on the top area */
 }
 
