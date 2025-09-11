@@ -96,10 +96,11 @@
   object-position: center 25%; /* Show more of the top portion of all images */
 }
 
-/* Specific styling for Jared Grunwald's image to show more of the picture */
+/* Specific styling for Jared Grunwald's image to show just his head */
 .team-member:nth-child(3) .team-member-image img {
   object-fit: cover;
-  object-position: center 25%; /* Show more of the top portion of the image */
+  object-position: center 40%; /* Move down to focus on head area */
+  transform: scale(1.2); /* Zoom in to show just the head */
 }
 
 .team-member h3 {
