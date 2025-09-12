@@ -3,7 +3,7 @@ import './About.css';
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="top">
       <div className="about-hero">
         <h1>About Gillespie Physical Therapy</h1>
         <p>Dedicated to your health and wellness journey</p>
@@ -33,7 +33,7 @@ const About = () => {
 
           <div className="team-member">
             <div className="team-member-image">
-              <img src="/images/nancy-frey-gillespie.jpg" alt="Nancy Frey-Gillespie" />
+              <img src="/images/Nancy-Frey-Gillespie.jpg" alt="Nancy Frey-Gillespie" />
             </div>
             <h3>Nancy Frey-Gillespie</h3>
             <p className="team-member-title">General Manager</p>

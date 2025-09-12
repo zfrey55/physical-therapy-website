@@ -38,7 +38,7 @@ const Home = () => {
             <p>Comprehensive programs to maintain and improve your overall health.</p>
           </div>
         </div>
-        <Link to="/services" className="view-all-button">View All Services</Link>
+        <Link to="/services" className="view-all-button" onClick={() => window.scrollTo(0, 0)}>View All Services</Link>
       </section>
 
       <section className="why-choose-us">
@@ -57,7 +57,7 @@ const Home = () => {
             <p>Track record of successful patient outcomes and positive testimonials.</p>
           </div>
         </div>
-        <Link to="/about" className="view-all-button">Meet Our Team</Link>
+        <Link to="/about" className="view-all-button" onClick={() => window.scrollTo(0, 0)}>Meet Our Team</Link>
       </section>
 
       <section className="testimonials">
