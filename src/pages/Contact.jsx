@@ -59,7 +59,7 @@ const Contact = () => {
             <div className="form-group">
               <label htmlFor="email">Email</label>
               <input
-                type="email"
+                type="text"
                 id="email"
                 name="email"
                 required
@@ -73,7 +73,6 @@ const Contact = () => {
                 id="phone"
                 name="phone"
                 placeholder="(555) 555-5555"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                 required
               />
             </div>
